@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-amiri: 'Amiri', 'Georgia', serif;
+    --font-sans-ar: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans-ar);
+    direction: rtl;
+    background-color: #fcfaf7;
+  }
+
+  body {
+    background-color: #fcfaf7;
+    color: #1a1a1a;
+    overflow-x: hidden;
+  }
+}
+
+.font-editorial, .font-amiri {
+  font-family: var(--font-amiri);
+}
+
+.font-sans-ar {
+  font-family: var(--font-sans-ar);
+}
+
+.line-draw {
+  height: 1px;
+  background: linear-gradient(to left, transparent, #c5a059, transparent);
+  width: 60%;
+  margin: 20px auto;
+}
+
+/* Fabric Curtain Realistic Folds & Sheen in Luxury Espresso/Obsidian */
+.fabric-curtain-left {
+  background: 
+    linear-gradient(90deg, 
+      rgba(24, 22, 21, 0.99) 0%, 
+      rgba(38, 35, 32, 0.96) 15%, 
+      rgba(20, 18, 17, 0.99) 30%, 
+      rgba(42, 38, 34, 0.93) 48%, 
+      rgba(18, 16, 15, 0.99) 65%, 
+      rgba(36, 33, 30, 0.96) 82%, 
+      rgba(24, 22, 21, 1) 100%
+    );
+  box-shadow: inset -15px 0 35px rgba(0, 0, 0, 0.85), -5px 0 25px rgba(0, 0, 0, 0.7);
+}
+
+.fabric-curtain-right {
+  background: 
+    linear-gradient(270deg, 
+      rgba(24, 22, 21, 0.99) 0%, 
+      rgba(38, 35, 32, 0.96) 15%, 
+      rgba(20, 18, 17, 0.99) 30%, 
+      rgba(42, 38, 34, 0.93) 48%, 
+      rgba(18, 16, 15, 0.99) 65%, 
+      rgba(36, 33, 30, 0.96) 82%, 
+      rgba(24, 22, 21, 1) 100%
+    );
+  box-shadow: inset 15px 0 35px rgba(0, 0, 0, 0.85), 5px 0 25px rgba(0, 0, 0, 0.7);
+}
+
+/* Subtle paper texture overlay from theme */
+.paper-texture {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
