@@ -5,9 +5,9 @@ import { weddingConfig } from '../weddingConfig';
  */
 export function getGoogleCalendarUrl(): string {
   const title = `حفل زفاف ${weddingConfig.groom} و ${weddingConfig.bride}`;
-  // 2026-09-10 from 19:00 to 23:59 UTC+3 (Cairo/Amman/Riyadh time approx)
-  const startTime = '20260910T190000';
-  const endTime = '20260910T235900';
+  // 2026-10-02 from 19:00 to 23:59 UTC+3 (Cairo time approx)
+  const startTime = '20261002T190000';
+  const endTime = '20261002T235900';
   const details = `${weddingConfig.invitationText}\n\nالمكان: ${weddingConfig.venue}\nرابط الخريطة: ${weddingConfig.mapsUrl}`;
   const location = weddingConfig.venue;
 
@@ -24,14 +24,14 @@ export function downloadIcsFile(): void {
   const icsContent = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Wedding Invitation//Hossam and Alaa//AR',
+    'PRODID:-//Wedding Invitation//Hossam and Omneya//AR',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',
-    'UID:wedding-hossam-alaa-20260910@wedding.app',
-    'DTSTAMP:20260905T120000Z',
-    'DTSTART:20260910T190000',
-    'DTEND:20260910T235900',
+    'UID:wedding-hossam-omneya-20261002@wedding.app',
+    'DTSTAMP:20260922T120000Z',
+    'DTSTART:20261002T190000',
+    'DTEND:20261002T235900',
     `SUMMARY:${title}`,
     `DESCRIPTION:${description}`,
     `LOCATION:${location}`,

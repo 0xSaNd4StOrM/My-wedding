@@ -88,12 +88,12 @@ export const InvitationSection: React.FC<InvitationSectionProps> = ({ id = "invi
         <div className="flex items-center gap-4 sm:gap-12 md:gap-16 border-y border-[#1a1a1a12] py-5 sm:py-7 w-full max-w-2xl justify-center bg-[#fcfaf7]/50 backdrop-blur-xs">
           <div className="text-right">
             <span className="block text-[10px] sm:text-xs uppercase tracking-widest opacity-40 mb-1 font-sans-ar">اليوم</span>
-            <span className="text-xl sm:text-2xl md:text-3xl font-editorial text-[#1a1a1a]">الخميس</span>
+            <span className="text-xl sm:text-2xl md:text-3xl font-editorial text-[#1a1a1a]">الجمعة</span>
           </div>
           <div className="h-10 sm:h-12 w-[1px] bg-[#c5a05940]" />
           <div className="text-center px-3">
-            <span className="block text-[10px] sm:text-xs uppercase tracking-widest opacity-40 mb-1 font-sans-ar">سبتمبر</span>
-            <span className="text-4xl sm:text-5xl md:text-6xl font-editorial tracking-tighter text-[#1a1a1a]">١٠</span>
+            <span className="block text-[10px] sm:text-xs uppercase tracking-widest opacity-40 mb-1 font-sans-ar">أكتوبر</span>
+            <span className="text-4xl sm:text-5xl md:text-6xl font-editorial tracking-tighter text-[#1a1a1a]">٢</span>
           </div>
           <div className="h-10 sm:h-12 w-[1px] bg-[#c5a05940]" />
           <div className="text-left">

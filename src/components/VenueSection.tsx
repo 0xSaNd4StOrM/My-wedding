@@ -32,7 +32,7 @@ export const VenueSection: React.FC<VenueSectionProps> = ({ id = "venue-section"
 
   const handleShareLocation = (e: React.MouseEvent) => {
     e.stopPropagation();
-    const text = `موقع حفل زفاف حسام و آلاء: ${weddingConfig.venue}\nرابط خرائط Google: ${weddingConfig.mapsUrl}`;
+    const text = `موقع حفل زفاف ${weddingConfig.groom} و ${weddingConfig.bride}: ${weddingConfig.venue}\nرابط خرائط Google: ${weddingConfig.mapsUrl}`;
     window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, '_blank');
   };
 
@@ -153,8 +153,8 @@ export const VenueSection: React.FC<VenueSectionProps> = ({ id = "venue-section"
               <circle cx="200" cy="140" r="120" stroke="#c5a059" strokeWidth="0.5" strokeDasharray="2 8" opacity="0.15" />
 
               {/* Minimalist geographic coordinate text */}
-              <text x="25" y="142" fill="#1a1a1a" fontSize="8" fontFamily="monospace" opacity="0.35" letterSpacing="1">30° 04&apos; N</text>
-              <text x="195" y="275" fill="#1a1a1a" fontSize="8" fontFamily="monospace" opacity="0.35" letterSpacing="1" textAnchor="middle">31° 14&apos; E</text>
+              <text x="25" y="142" fill="#1a1a1a" fontSize="8" fontFamily="monospace" opacity="0.35" letterSpacing="1">29° 57&apos; N</text>
+              <text x="195" y="275" fill="#1a1a1a" fontSize="8" fontFamily="monospace" opacity="0.35" letterSpacing="1" textAnchor="middle">31° 10&apos; E</text>
             </g>
 
             {/* Cinematic Scroll-Drawn Destination Path */}
