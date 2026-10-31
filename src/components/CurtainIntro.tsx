@@ -195,7 +195,7 @@ export const CurtainIntro: React.FC<CurtainIntroProps> = ({ onOpened }) => {
     <div
       ref={containerRef}
       id="curtain-intro"
-      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-[#fcfaf7] text-[#1a1a1a] select-none"
+      className="relative w-full min-h-screen flex items-center justify-center overflow-x-hidden bg-[#fcfaf7] text-[#1a1a1a] select-none"
     >
       {/* Brass Curtain Rail Rod at Top */}
       <div 
@@ -223,13 +223,13 @@ export const CurtainIntro: React.FC<CurtainIntroProps> = ({ onOpened }) => {
       <div className="absolute inset-0 z-25 pointer-events-none flex items-center justify-between px-6 sm:px-16 md:px-32">
         <div
           ref={peekBrideRef}
-          className="font-editorial text-2xl sm:text-4xl md:text-5xl text-[#c5a059]/30 opacity-0 tracking-widest"
+          className="font-editorial text-xl sm:text-3xl md:text-4xl text-[#c5a059]/30 opacity-0 tracking-widest text-center"
         >
           {weddingConfig.bride}
         </div>
         <div
           ref={peekGroomRef}
-          className="font-editorial text-2xl sm:text-4xl md:text-5xl text-[#c5a059]/30 opacity-0 tracking-widest"
+          className="font-editorial text-xl sm:text-3xl md:text-4xl text-[#c5a059]/30 opacity-0 tracking-widest text-center"
         >
           {weddingConfig.groom}
         </div>
